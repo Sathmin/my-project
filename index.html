@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Sathmin Ofc</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Animation */
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff7a18, #af002d, #319197, #fb046d);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Website Name Animation */
+        .website-name {
+            font-size: 3rem;
+            font-weight: bold;
+            background-image: linear-gradient(to right, #ff7a18, #af002d, #319197);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: borderGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes borderGlow {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #ff7a18, 0 0 15px #ff7a18;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #af002d, 0 0 30px #319197;
+            }
+        }
+
+        /* Button Styles */
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        /* Light Border Animation */
+        .button-container a {
+            text-decoration: none;
+        }
+
+        /* Background Music */
+        .background-music {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio class="background-music" autoplay loop>
+        <source src="YOUR_BGM_FILE_PATH.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div>
+        <div class="website-name">
+            Mr. Sathmin Ofc
+        </div>
+
+        <div class="button-container">
+            <a href="https://wa.me/+94761681904" class="button" target="_blank">Contact via WhatsApp</a>
+            <a href="https://t.me/+94765775266" class="button" target="_blank">Contact via Telegram</a>
+            <a href="https://github.com/Bozamk" class="button" target="_blank">Visit my GitHub</a>
+            <a href="https://www.facebook.com/share/18q4iLPdcp/" class="button" target="_blank">Visit my Facebook</a>
+        </div>
+    </div>
+
+</body>
+</html>
